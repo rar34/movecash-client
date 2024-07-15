@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    const user = true;
+    const user = false;
     const isAdmin = true
     const navLinks = <>
         <li><NavLink to="/" style={({ isActive }) => { return isActive ? { backgroundColor: '#FFFFFF', color: "black" } : {}; }}>Home</NavLink></li>
@@ -58,7 +58,7 @@ const Navbar = () => {
                                     </ul>
                                 </div>
                                     :
-                                    <Link to="/login"><button className="btn btn-outline border hover:bg-[#F7931D] border-[#F5F5DC] text-white text-xl font-medium md:font-bold">Join US</button></Link>
+                                    <Link to="/login"><button className="btn btn-outline border hover:bg-[#F7931D] border-[#F5F5DC] text-white text-xl font-medium md:font-bold">Login</button></Link>
                             }
                         </div>
 
